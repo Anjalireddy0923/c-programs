@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int baby_count = 0;
+    int school_count = 0;
+    int adult_count = 0;
+    int age;
+
+    for (int i = 0; i < 20; i++) {
+        printf("Enter the age of person %d: ", i + 1);
+        scanf("%d", &age);
+
+        if (age >= 0 && age <= 3) {
+            baby_count++;
+        } else if (age >= 4 && age <= 18) {
+            school_count++;
+        } else {
+            adult_count++;
+        }
+    }
+
+    printf("Number of persons in baby age: %d\n", baby_count);
+    printf("Number of persons in school age: %d\n", school_count);
+    printf("Number of persons in adult age: %d\n", adult_count);
+
+    return 0;
+}
+
